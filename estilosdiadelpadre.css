@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Cream Cake';
+    src: url('fonts/Cream\ Cake.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hugs and Kisses xoxo Demo';
+    src: url('fonts/Hugs\ &\ Kisses\ xoxo\ Demo.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Cream Cake', sans-serif;
+    font-size: 80px; /* Ajusta este valor para hacer la fuente más grande */
+    background-image: url('imagenes/fondo.png');
+    background-size: cover;
+    color: #333;
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99%;
+    width: 99%;
+}
+    
+    
+.red-text {
+    color: #D52B1E;
+}
+   
+.header{
+    float: left;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    margin: auto auto;
+    max-width:600px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+    
+.image-container {
+    position: absolute;
+    top: -60px; /* Ajusta la posición vertical de la imagen */
+    margin: auto auto;
+    /* max-width: 200px; */
+    max-height: 150px;
+    /* transform: translateX(-50%); */
+    border-radius: 30px;
+    overflow: hidden;
+    float: left;
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: 32%; /* Ajusta la altura de la imagen */
+}
+  
+.image-container img {
+    /* width: 100%; */ /* Asegura que la imagen ocupe todo el contenedor */
+    height: 100%;
+    margin: auto; /* Asegura que la imagen ocupe todo el contenedor */
+    border-radius: 30px;
+}
+
+.container {
+    margin-top: 10px; /* Ajusta el espacio para la imagen flotante */
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+    
+.message {
+    margin: 20px 0;
+    padding: 3%;
+}
+    
+button {
+    background-color: #D52B1E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 30%;
+    float: left;
+}
+
+.enlace {
+    width: 100%;
+    float: left;
+}
+
+.frase{
+    font-size: 2.1vw;
+}
+
+.logo {
+    height: 20px; /* Ajusta el tamaño del logo según tus necesidades */
+    vertical-align: middle;
+}
+    
+.invitaciontexto {
+    font-family: 'arial', sans-serif;
+    font-size: 1.2vw; /* Ajusta el tamaño de esta fuente */
+}
+    
+.horadia {
+    font-family: 'arial', sans-serif;
+    color: #D52B1E;
+    font-size: 1.2vw; /* Ajusta el tamaño de esta fuente */
+}
+
+h1 {
+    color: #D52B1E;
+    font-family: 'Hugs and Kisses xoxo Demo';
+    font-size: 4vw;
+    text-align: center;
+    margin: 0 auto;
+}
+   
+
+/*Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .invitaciontexto {
+        font-family: 'arial', sans-serif;
+        font-size: 3.5vw; /* Ajusta el tamaño de esta fuente */
+    }
+        
+    .horadia {
+        font-family: 'arial', sans-serif;
+        color: #D52B1E;
+        font-size: 3.5vw; /* Ajusta el tamaño de esta fuente */
+    }
+
+    .frase{
+        font-size: 3.5vw;
+    }
+
+    h1 {
+        color: #D52B1E;
+        font-family: 'Hugs and Kisses xoxo Demo';
+        font-size: 8vw;
+        text-align: center;
+      
+    }
+
+    .image-container {
+        position: absolute;
+        margin-top: -10px; /* Ajusta la posición vertical de la imagen */
+    }
+
+    .message {
+        margin: 90px 0;
+        padding: 3%;
+    }
+}
+
+/*Media query para pantallas más pequeñas */
+@media screen and (max-width: 450px) {
+    .invitaciontexto {
+        font-family: 'arial', sans-serif;
+        font-size: 4.5vw; /* Ajusta el tamaño de esta fuente */
+    }
+        
+    .horadia {
+        font-family: 'arial', sans-serif;
+        color: #D52B1E;
+        font-size: 4.5vw; /* Ajusta el tamaño de esta fuente */
+    }
+
+    .frase{
+        font-size: 6vw;
+    }
+
+    h1 {
+        color: #D52B1E;
+        font-family: 'Hugs and Kisses xoxo Demo';
+        font-size: 9vw;
+        text-align: center;
+      
+    }
+}
+
+/*Media query para pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+    .invitaciontexto {
+        font-family: 'arial', sans-serif;
+        font-size: 5vmin; /* Ajusta el tamaño de esta fuente */
+    }
+        
+    .horadia {
+        font-family: 'arial', sans-serif;
+        color: #D52B1E;
+        font-size: 5vmin; /* Ajusta el tamaño de esta fuente */
+    }
+
+    .frase{
+        font-size: 6.5vmin;
+    }
+
+    h1 {
+        color: #D52B1E;
+        font-family: 'Hugs and Kisses xoxo Demo';
+        font-size: 12vmin;
+        text-align: center;
+      
+    }
+
+    .image-container {
+        position: absolute;
+        margin-top: 60px; /* Ajusta la posición vertical de la imagen */
+    }
+
+    .message {
+        margin: 110px 0;
+        padding: 3%;
+    }
+}
+
+    /*.image-container {
+        width: 20%; /* Reducir tamaño de imagen para pantallas más pequeñas 
+        padding-bottom: 20%; /* Relación de aspecto cuadrada para contenedor 
+    }
+
+    .message {
+        font-size: 12px; /* Reducir tamaño de fuente para mensajes 
+    }
+
+    button {
+        padding: 0.75rem 1.5rem; /* Reducir tamaño de botón para pantallas más pequeñas 
+        font-size: 10px; /* Reducir tamaño de fuente para botones 
+    }
+
+    .invitaciontexto, .horadia {
+        font-size: 12 px; /* Reducir tamaño de fuente para texto de invitación y hora/día 
+    }
+}*/
+
+/* Media query para pantallas muy pequeñas (ejemplo: móviles en vertical) 
+@media (max-width: 480px) {
+    .content-container {
+        max-width: 50%; /* Ancho máximo completo para pantallas muy pequeñas 
+    }
+
+    .image-container {
+        width: 80%; /* Reducir tamaño de imagen para pantallas muy pequeñas 
+        padding-bottom: 80%; /* Relación de aspecto cuadrada para contenedor 
+    }
+
+    .message {
+        font-size: 1.25rem; /* Reducir tamaño de fuente para mensajes 
+    }
+
+    button {
+        padding: 0.5rem 1rem; /* Reducir aún más el tamaño de botón para pantallas muy pequeñas 
+        font-size: 0.75rem; /* Reducir aún más el tamaño de fuente para botones 
+    }
+
+    .invitaciontexto, .horadia {
+        font-size: 0.75rem; /* Reducir aún más el tamaño de fuente para texto de invitación y hora/día 
+    }
+}*/
